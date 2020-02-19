@@ -1,1 +1,40 @@
-<mxfile host="www.draw.io" modified="2020-02-19T16:27:28.135Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36" version="12.7.2" etag="IPiD4wTbVQ7Vw3doUpC1" type="github"><diagram id="wsrk73H0j5NfRakvJbiw">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-19T17:16:05.534Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36" etag="qoSm57ztSmXamT0RilSl" version="12.7.2" type="github">
+  <diagram id="wsrk73H0j5NfRakvJbiw" name="Page-1">
+    <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-1" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" vertex="1" parent="1">
+          <mxGeometry x="185" y="55" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-2" value="连接地址：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="65" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-3" value="连接次数：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="160" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-4" value="登录次数：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="160" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-5" value="断开次数：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-6" value="查询次数：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="210" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-7" value="秒内最大并发：" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="97.5" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-8" value="20" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="92.5" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-11" value="10" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="95" width="30" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TaYrUB9KjwVBMtWcSuq7-12" value="开始/停止" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="400" y="93" width="70" height="27" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
