@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-03-17T13:43:02.063Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="mRxP3pLBwa26nK4kak6W" version="12.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-03-17T13:47:22.227Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36" etag="oO1IMkFFwFi8vRmsTjdM" version="12.8.5" type="github">
   <diagram id="wjSjPYN3a7mQub9L3QAU" name="第 1 页">
     <mxGraphModel dx="782" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -126,35 +126,56 @@
         <mxCell id="3QrZFKQzmHGx9tuXlsho-19" value="require" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dashed=1;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-8">
           <mxGeometry y="218" width="80" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-22" value="&amp;laquo;interface&amp;raquo;&lt;br&gt;&lt;b&gt;Name&lt;/b&gt;" style="html=1;dashed=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="90" y="570" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-23" value="IApp" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;dashed=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="220" y="500" width="400" height="216" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-23" value="IBaseWindow" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;dashed=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="480" width="350" height="190" as="geometry" />
         </mxCell>
         <mxCell id="3QrZFKQzmHGx9tuXlsho-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="26" width="400" height="8" as="geometry" />
+          <mxGeometry y="26" width="350" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-24" value="+ appWindows: {[name: string]: windows.IBaseWindowClass}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="34" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-24" value="+ app: IApp" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
+          <mxGeometry y="34" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-27" value="+ windows: {[name: string]: windows.IBaseWindow}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="60" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-27" value="+ options: IBaseWindowConstructorOptions" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
+          <mxGeometry y="60" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-28" value="+ ipcConnection: Common.Modules.IPCConnection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="86" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-28" value="+ window: electron.BrowserWindow" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
+          <mxGeometry y="86" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-26" value="+ createWindows()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="112" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-26" value="+ destroy()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
+          <mxGeometry y="112" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-29" value="+ destroyWindows()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="138" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-29" value="+ createWindow(options?: IBaseWindowConstructorOptions)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
+          <mxGeometry y="138" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-30" value="+ createWindow(name: string, iClass: windows.IBaseWindowClass)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="164" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-30" value="+ destroyWindow()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
+          <mxGeometry y="164" width="350" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3QrZFKQzmHGx9tuXlsho-31" value="+ destroyWindow(name: string) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-23">
-          <mxGeometry y="190" width="400" height="26" as="geometry" />
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-32" value="IApp(AppMain)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;dashed=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="477" width="380" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="26" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-34" value="+ appWindows: {[name: string]: windows.IBaseWindowClass}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="34" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-35" value="+ windows: {[name: string]: windows.IBaseWindow}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="60" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-36" value="+ ipcConnection: Common.Modules.IPCConnection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="86" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-37" value="+ createWindows()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="112" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-38" value="+ destroyWindows()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="138" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-39" value="+ createWindow(name: string, iClass: windows.IBaseWindowClass)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="164" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3QrZFKQzmHGx9tuXlsho-40" value="+ destroyWindow(name: string) " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3QrZFKQzmHGx9tuXlsho-32">
+          <mxGeometry y="190" width="380" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
