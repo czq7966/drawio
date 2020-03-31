@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2020-03-31T15:04:25.608Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" version="12.9.5" etag="ZR2CL7t9JjTzBq3pncpu" type="github"><diagram id="SbGMkIWL9aFoVgGHBD6R">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-03-31T15:13:42.343Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" etag="dcZzE-EjTJt9OO0Y_MFG" version="12.9.5" type="github">
+  <diagram id="SbGMkIWL9aFoVgGHBD6R" name="第 1 页">
+    <mxGraphModel dx="782" dy="1606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-1" value="Chrome Remote Desktop" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-10" width="360" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-2" value="WEB" style="swimlane;html=1;startSize=20;" vertex="1" parent="ARVyD9SuzAaGCwT--6MW-1">
+          <mxGeometry y="20" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-6" value="主要负责UI交互和表现逻辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ARVyD9SuzAaGCwT--6MW-2">
+          <mxGeometry x="12.5" y="80" width="95" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-3" value="Extension" style="swimlane;html=1;startSize=20;" vertex="1" parent="ARVyD9SuzAaGCwT--6MW-1">
+          <mxGeometry x="120" y="20" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-7" value="承上启下作用，作为WEB和NativeHost数据交互的桥梁" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ARVyD9SuzAaGCwT--6MW-3">
+          <mxGeometry x="12.5" y="80" width="95" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-4" value="Native Host" style="swimlane;html=1;startSize=20;" vertex="1" parent="ARVyD9SuzAaGCwT--6MW-1">
+          <mxGeometry x="240" y="20" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-8" value="负责主要的底层逻辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="ARVyD9SuzAaGCwT--6MW-4">
+          <mxGeometry x="12.5" y="80" width="95" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="ARVyD9SuzAaGCwT--6MW-1" source="ARVyD9SuzAaGCwT--6MW-6" target="ARVyD9SuzAaGCwT--6MW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ARVyD9SuzAaGCwT--6MW-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="ARVyD9SuzAaGCwT--6MW-1" source="ARVyD9SuzAaGCwT--6MW-7" target="ARVyD9SuzAaGCwT--6MW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
