@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-16T06:37:56.848Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="EdNM0cCn4nYYTcSxYK03" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-16T06:39:58.825Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="jJgFOUVAPPdw6QqCi5T2" version="14.9.6" type="github">
   <diagram id="SIeUacuSp1Kk_G01sxYb" name="Page-1">
     <mxGraphModel dx="1304" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -83,7 +83,7 @@
         <mxCell id="UCuOql0rdX9mmwR3eOzm-44" value="串口直连方式因CGate缺少arm架构的jspLuxArm.so包而暂时无法实现" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;dashed=1;fontSize=16;strokeColor=#FF3333;fontColor=#FF3333;" vertex="1" parent="1">
           <mxGeometry x="280" y="270" width="280" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="UCuOql0rdX9mmwR3eOzm-48" value="通过Ser2Sock中间件将串口转Sock与CGate的CNI连接达到CGate与CBUS通讯" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;dashed=1;fontSize=16;strokeColor=#00CC00;fontColor=#00CC00;" vertex="1" parent="1">
+        <mxCell id="UCuOql0rdX9mmwR3eOzm-48" value="通过Ser2Sock中间件将串口转Sock与CGate的CNI连接达到CGate与CBUS通讯的目的" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;dashed=1;fontSize=16;strokeColor=#00CC00;fontColor=#009900;" vertex="1" parent="1">
           <mxGeometry x="210" y="532.5" width="305" height="87.5" as="geometry" />
         </mxCell>
         <mxCell id="UCuOql0rdX9mmwR3eOzm-50" value="ARM架构网关" style="swimlane;startSize=0;fontSize=16;fontColor=#330000;strokeColor=#330000;" vertex="1" parent="1">
